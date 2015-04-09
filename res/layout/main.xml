@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/accelerometer" android:layout_gravity="center"></ImageView>
+    <com.androidplot.xy.XYPlot 
+    	android:id="@+id/accHistoryPlot"
+    	android:layout_marginLeft="10px" 
+    	android:layout_marginRight="10px" 
+    	android:layout_width="fill_parent" 
+    	android:layout_marginTop="10px" 
+    	android:layout_height="300px" 
+    	title="Real-time XYZ output">
+    </com.androidplot.xy.XYPlot>
+    <LinearLayout android:id="@+id/linearLayout2" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView1" android:text="X-Axis:"></TextView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textXAxis" android:text=" 0.0g"></TextView>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout3" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView2" android:text="Y-Axis:"></TextView>
+        <TextView android:text=" 0.0g" android:id="@+id/textYAxis" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout4" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView3" android:text="Z-Axis:"></TextView>
+        <TextView android:text=" 0.0g" android:id="@+id/textZAxis" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center_horizontal">
+        <CheckBox android:text="X-Axis" android:checked="true" android:id="@+id/cbXAxis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#6464C8"></CheckBox>
+        <CheckBox android:text="Y-Axis" android:checked="true" android:id="@+id/cbYAxis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#64C864"></CheckBox>
+        <CheckBox android:text="Z-Axis" android:checked="true" android:id="@+id/cbZAxis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#C86464"></CheckBox>
+    </LinearLayout>
+       
+</LinearLayout>
